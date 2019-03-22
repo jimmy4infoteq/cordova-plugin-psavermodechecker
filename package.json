@@ -1,0 +1,17 @@
+{
+  "name": "org.igs.cordova.psavermodechecker",
+  "version": "0.1.0",
+  "description": "",
+  "cordova": {
+    "id": "org.igs.cordova.psavermodechecker",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "jmj (jimmy.bastine@hallodealerapp.com)",
+  "license": "N/A"
+}
