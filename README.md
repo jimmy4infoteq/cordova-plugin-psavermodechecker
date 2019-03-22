@@ -16,7 +16,7 @@
 
 ## How this can be used in Javascript
 
-1. To get the Device Level PowerSave mode status
+1. To get the Device Level PowerSaver mode status
     
    ```javascript
       cordova.plugins.psavermodechecker.deviceLevelCheck(
@@ -32,7 +32,7 @@
         }
     );
    ```
-2. To get the App Level PowerSave mode status
+2. To get the App Level PowerSaver mode status
    ```javascript
       cordova.plugins.psavermodechecker.deviceLevelCheck( "reverse.domain.packageName"
         function(flag) {
