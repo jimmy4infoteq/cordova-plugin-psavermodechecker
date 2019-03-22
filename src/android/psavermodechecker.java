@@ -14,7 +14,7 @@ import android.os.PowerManager;
 import android.os.Build;
 
 /**
- * This class echoes a string called from JavaScript.
+ * The endpoint communicates with javascript
  */
 public class psavermodechecker extends CordovaPlugin {
     private static final String PKGTAG = "psavermodechecker";
