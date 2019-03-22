@@ -15,4 +15,4 @@
 1. To get the Device Level PowerSave mode status
    cordova.plugins.psavermodechecker.deviceLevelCheck(function(flag){ if(flag=='true'){ alert("powerSaver-ON"); } else { alert("powerSaver-OFF"); } },function(err){ alert(err); });
 2. To get the App Level PowerSave mode status
-   `cordova.plugins.psavermodechecker.appLevelCheck('packageName.reverse.domain', function(flag){ if(flag=='true'){ alert("powerSaver-ON"); } else { alert("powerSaver-OFF"); } },function(err){ alert(err); });`
+   cordova.plugins.psavermodechecker.appLevelCheck('packageName.reverse.domain', function(flag){ if(flag=='true'){ alert("powerSaver-ON"); } else { alert("powerSaver-OFF"); } },function(err){ alert(err); });
