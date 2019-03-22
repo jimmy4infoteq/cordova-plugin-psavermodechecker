@@ -34,7 +34,7 @@
    ```
 2. To get the App Level PowerSaver mode status
    ```javascript
-      cordova.plugins.psavermodechecker.appLevelCheck( "reverse.domain.packageName"
+      cordova.plugins.psavermodechecker.appLevelCheck( "reverse.domain.packageName",
         function(flag) {
             if(flag=='true'){
                alert("App level - powerSaver-ON"); 
