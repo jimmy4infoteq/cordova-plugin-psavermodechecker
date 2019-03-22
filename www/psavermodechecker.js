@@ -4,6 +4,6 @@ exports.deviceLevelCheck = function ( success, error ) {
     exec( success, error, 'psavermodechecker', 'deviceLevelCheck', [] );
 };
 
-exports.appLevelCheck = function ( success, error ) {
-    exec( success, error, 'psavermodechecker', 'appLevelCheck', [] );
+exports.appLevelCheck = function ( pkgName, success, error ) {
+    exec( success, error, 'psavermodechecker', 'appLevelCheck', [ pkgName ] );
 };
