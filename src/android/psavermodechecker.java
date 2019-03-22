@@ -14,7 +14,7 @@ import android.os.PowerManager;
 import android.os.Build;
 
 /**
- * The endpoint communicates with javascript
+ * CordovaPlugin Class
  */
 public class psavermodechecker extends CordovaPlugin {
     private static final String PKGTAG = "psavermodechecker";
@@ -33,6 +33,9 @@ public class psavermodechecker extends CordovaPlugin {
         context = super.cordova.getActivity().getApplicationContext();
     }
 
+   /**
+    * The endpoint that communicates with javascript
+    */
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         if (action.equals("deviceLevelCheck")) {
