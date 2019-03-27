@@ -1,7 +1,7 @@
 {
   "name": "org.igs.cordova.psavermodechecker",
   "version": "0.1.0",
-  "description": "",
+  "description": "- This plugin is to check whether PowerSaver Mode is on either at device level or App level",
   "cordova": {
     "id": "org.igs.cordova.psavermodechecker",
     "platforms": [
@@ -13,5 +13,13 @@
     "cordova-android"
   ],
   "author": "jmj (jimmy.bastine@hallodealerapp.com)",
-  "license": "N/A"
+  "license": "N/A",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimmy4infoteq/cordova-plugin-psavermodechecker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jimmy4infoteq/cordova-plugin-psavermodechecker/issues"
+  },
+  "homepage": "https://github.com/jimmy4infoteq/cordova-plugin-psavermodechecker#readme"
 }

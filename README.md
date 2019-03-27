@@ -9,7 +9,7 @@
 ```
 
 ## How to Remove it
-    
+
 ```
     cordova plugin remove cordova-plugin-psavermodechecker
 ```
@@ -17,33 +17,41 @@
 ## How this can be used in Javascript
 
 1. To get the Device Level PowerSaver mode status
-    
    ```javascript
-      cordova.plugins.psavermodechecker.deviceLevelCheck(
-        function(flag) {
-            if(flag=='true'){
-               alert("Device Level - powerSaver-ON"); 
-            } else { 
-               alert("Device Level - powerSaver-OFF"); 
-            } 
-        },
-        function(err){ 
-                alert(err); 
-        }
-    );
+   cordova.plugins.psavermodechecker.deviceLevelCheck(
+     function(flag) {
+       if (flag == "true") {
+         alert("Device Level - powerSaver-ON");
+       } else {
+         alert("Device Level - powerSaver-OFF");
+       }
+     },
+     function(err) {
+       alert(err);
+     }
+   );
    ```
 2. To get the App Level PowerSaver mode status
    ```javascript
-      cordova.plugins.psavermodechecker.appLevelCheck( "reverse.domain.packageName",
-        function(flag) {
-            if(flag=='true'){
-               alert("App level - powerSaver-ON"); 
-            } else { 
-               alert("App level - powerSaver-OFF"); 
-            } 
-        },
-        function(err){ 
-                alert(err); 
-        }
-    );
+   cordova.plugins.psavermodechecker.appLevelCheck(
+     "reverse.domain.packageName",
+     function(flag) {
+       if (flag == "true") {
+         alert("App level - powerSaver-ON");
+       } else {
+         alert("App level - powerSaver-OFF");
+       }
+     },
+     function(err) {
+       alert(err);
+     }
+   );
+   ```
+3. Request the user to whitelist app from powersaving optimizations
+   ```javascript
+   cordova.plugins.psavermodechecker.requestWhitelistApp(
+     "reverse.domain.packageName",
+     function(flag) {},
+     function(err) {}
+   );
    ```
