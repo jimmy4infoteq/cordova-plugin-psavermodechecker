@@ -11,7 +11,7 @@
 ## How to Remove it
 
 ```
-    cordova plugin remove cordova-plugin-psavermodechecker
+    cordova plugin remove org.igs.cordova.psavermodechecker
 ```
 
 ## How this can be used in Javascript
