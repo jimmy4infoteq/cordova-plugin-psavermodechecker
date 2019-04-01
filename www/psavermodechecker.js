@@ -4,18 +4,18 @@ exports.deviceLevelCheck = function ( success, error ) {
     exec( success, error, 'psavermodechecker', 'deviceLevelCheck', [] );
 };
 
-exports.appLevelCheck = function ( pkgName, success, error ) {
-    exec( success, error, 'psavermodechecker', 'appLevelCheck', [ pkgName ] );
+exports.appLevelCheck = function ( success, error ) {
+    exec( success, error, 'psavermodechecker', 'appLevelCheck', [] );
 };
 
-exports.openAppLevelSettings = function ( pkgName, success, error ) {
-    exec( function () {}, function () {}, 'psavermodechecker', 'openAppLevelSettings', [] );
+exports.openAppLevelSettings = function ( success, error ) {
+    exec( success, error, 'psavermodechecker', 'openAppLevelSettings', [] );
 };
 
-exports.openDeviceLevelSettings = function ( pkgName, success, error ) {
-    exec( function () {}, function () {}, 'psavermodechecker', 'openDeviceLevelSettings', [] );
+exports.openDeviceLevelSettings = function ( success, error ) {
+    exec( success, error, 'psavermodechecker', 'openDeviceLevelSettings', [] );
 };
 
-exports.requestWhitelistApp = function ( pkgName, success, error ) {
-    exec( function () {}, function () {}, 'psavermodechecker', 'requestWhitelistApp', [ pkgName ] );
+exports.requestWhitelistApp = function ( success, error ) {
+    exec( success, error, 'psavermodechecker', 'requestWhitelistApp', [] );
 };
