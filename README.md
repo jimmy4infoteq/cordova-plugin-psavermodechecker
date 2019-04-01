@@ -34,7 +34,6 @@
 2. To get the App Level PowerSaver mode status
    ```javascript
    cordova.plugins.psavermodechecker.appLevelCheck(
-     "reverse.domain.packageName",
      function(flag) {
        if (flag == "true") {
          alert("App level - powerSaver-ON");
@@ -48,10 +47,32 @@
    );
    ```
 3. Request the user to whitelist app from powersaving optimizations
+
    ```javascript
    cordova.plugins.psavermodechecker.requestWhitelistApp(
-     "reverse.domain.packageName",
-     function(flag) {},
-     function(err) {}
+     function(flag) {
+       console.log("WHITE LISTED - " + flag);
+     },
+     function(err) {
+       console.log("UNABLE TO WHITELIST - " + err);
+     }
    );
    ```
+
+4. Open Device Level powersaving settings
+
+```javascript
+cordova.plugins.psavermodechecker.openDeviceLevelSettings(
+  function(flag) {},
+  function(err) {}
+);
+```
+
+5. Open app level powersaving optimizations settings
+
+```javascript
+cordova.plugins.psavermodechecker.openAppLevelSettings(
+  function(flag) {},
+  function(err) {}
+);
+```
